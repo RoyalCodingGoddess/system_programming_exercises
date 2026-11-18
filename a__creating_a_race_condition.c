@@ -4,7 +4,7 @@
 int run = 0;
 void * lab (void*arg){
 
-for(int i = 0; i < 210; i++)
+for(int i = 0; i < 2100000; i++)
 run++;
 return NULL;
 }
@@ -16,6 +16,6 @@ pthread_create(&r1, NULL, lab, NULL);
 pthread_create(&r2, NULL, lab, NULL);
 pthread_join(r1, NULL);
 pthread_join(r2, NULL);
-printf("End is 420 = %d\n", run);
+printf("End is 4200000 = %d\n", run);
 return 0;
 }
